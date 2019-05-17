@@ -1,0 +1,59 @@
+p{
+    color: blue;
+}
+
+h1{
+    color: deeppink;
+}
+
+h2{
+    color: teal;
+}
+
+h3{
+    color: purple;
+}
+
+body{
+    background-color: lightyellow;
+}
+
+img{
+    border: red 5px dotted;
+}
+
+a{
+    background-color: lightgreen;
+    text-decoration: none;
+}
+
+th{
+    color: blue;
+}
+
+td{
+    color: darkgreen;
+}
+
+table{
+    border: red 5px dotted;
+}
+
+#favorite_band{
+    background-color: green;
+    font-size: 34px;
+}
+
+#favorite_movie{
+    background-color: blueviolet;
+    font-size:34px;
+}
+
+.favorite_section{
+    border-style: dashed;
+    border-color: pink;
+    border-width: 8px;
+
+    margin: 10px; /* Add space between elements */
+    padding: 15px; /* space between border and contents */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Sign In</title>
+    <script src="https://unpkg.com/vue@2.6.7/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="student.css" type="text/css">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- TODO show error alert -->
+
+        <div class="card add-student m-2 p-2">
+            <form>
+                <h4 class="card-title">Add new student</h4>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <!-- TODO v-model -->
+                    <input id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="starID">Star ID</label>
+                    <!-- TODO v-model -->
+                    <input id="starID" class="form-control">
+                </div>
+
+                <!-- TODO v-on:click event handler -->
+                <button class="btn btn-primary">Add</button>
+            </form>
+        </div>
+
+        <div class="card student-list m-2 p-2">
+            <h4 class="card-title">Students</h4>
+            <div id="student-table">
+                <table class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>StarID</th>
+                        <th>Present?</th>
+                    </tr>
+                    <!-- TODO create table rows
+                    Each row will have a checkbox, bound to the app data
+                    When the checkbox is checked/unchecked, the student will be signed in/out 
+                     -->
+                     <tr v-for="student in students">
+                         <td>{{student.name}}</td>
+                         <td>{{<student.starID}}</td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+
+        <transition name="fade">
+            <!-- TODO welcome or goodbye message -->
+        </transition>
+    </div>
+
+    <script>
+
+        let app = new Vue({
+            el: "#app",
+            data: {
+                students: [ { name: Ali Deutsch, starID: 'yg7666bl', present: false} ]
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

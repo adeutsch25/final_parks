@@ -1,0 +1,13 @@
+/*Apply style to all li elements*/
+.jumbotron{
+    background-color: lightpink;
+}
+
+h1{
+    background-color: lightseagreen;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #AA5585;
+}

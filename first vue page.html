@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Hello Vue</h1>
+        <label for="name">Please enter your name: </label>
+        <input v-model="name" id="name">
+        <p>
+            Your name is {{ name }}
+        </p>
+        <p>
+            {{ message | uppercase }}
+        </p>
+
+        <p>
+            The message is {{ message.length }} letters long
+        </p>
+
+        <p>
+            There are {{ message.length - 11 }} exclamation marks
+        </p>
+        <button v-on:click="addExclamation">Add !</button>
+
+        <p>My favorite animal is a {{favoriteAnimal}}.</p>
+        <p>This class is {{thisClass}}.</p>
+
+        
+    </div>
+
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data: {
+                name: ""
+                message: 'Happy Thursday!',
+                favoriteAnimal: 'turtle',
+                thisClass: 'Web Programming'
+            },
+            methods: {
+                addExclamation: function(event) {
+                    this.message += '!'
+                }
+            },
+            filters: {
+                uppercase: function(string) {
+                    return string.toUpperCase()
+                }
+            }
+
+        })
+    </script>
+
+</body>
+</html>
+
+

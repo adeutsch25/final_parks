@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Fetch - Where's is the ISS</title>
+    <!-- async = load the script in parallel with the html
+        defer = wait until the HTML has finished loading before running the script -->
+
+    <!-- Leaflet script and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+    <!-- Our stylesheet. Make sure the size of the map div is set before trying to draw the map.-->
+    <link rel="stylesheet" type ="text/css" href="style.css">
+
+    <!-- defer means wait for page to load - including the Leaflet scrips - before executing -->
+    <script async defer src="fetch.js"></script>
+
+</head>
+
+<body>
+    <h1> Where is the International Space Station</h1>
+    <div>
+        <p>ISS Latitude: <span id="iss-lat"></span></p>
+        <p>ISS Longitude: <span id="iss-long"></span></p>
+    </div>
+    <div id="iss-map"></div>
+</body>
+
+</html>
+

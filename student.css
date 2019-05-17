@@ -1,0 +1,25 @@
+
+
+/* https://vuejs.org/v2/guide/transitions.html */
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+#student-table {
+    max-height: 500px;
+    overflow: scroll;
+}
+.present-true {
+    color: teal;
+    font-style: bold;
+}
+
+.present-false {
+    color: red;
+    font-weight: bold;
+}

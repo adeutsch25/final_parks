@@ -1,0 +1,21 @@
+#iss-map {
+    height: 400px;
+    width: 500px;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.present-true {
+    color: gray;
+    font-style: italic;
+}
+
+.present-false {
+    font-weight: bold;
+}

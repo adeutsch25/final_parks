@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+    <button>Click me!</button>
+
+    <script>
+
+        // Find the button element
+        let button = document.querySelector('button')
+        button.innerHTML = 'Please click the button'
+
+        let alertText = 'You clicked the button!'
+        // Add an event listener for click events, with a callback function
+        // The callback function runs when the event (clicking the button) happens
+        button.addEventListener('click', function(){
+            alert(alertText)
+            button.innerHTML - 'The button was clicked'
+        })
+
+    </script>
+
+</body>
+</html>
